@@ -1,0 +1,16 @@
+// Typescript를 Javascript로 컴파일할 때 적용할 옵션설정
+// compile option : https://www.typescriptlang.org/docs/handbook/compiler-options.html
+
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true, //@(decorator)
+    "lib": [ "es2015", "dom" ],
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <!--es6-shim: 브라우저에서 지원하지 않는 es6 기능 지원을 위한 스크립트-->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <!--zone.js: Angular2 에서 이벤트 detecet를 위해 사용하는 필수 라이브러리-->
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <!--System.src.js: ES6 모듈 스펙에 호환되는 동적 모듈 로더 (각 JS 파일을 로드하는데 사용)-->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!--위에서 작성한 SystemJS Config 파일-->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <my-app>Loading AppComponent content here ...</my-app>
+  </body>
+</html>
