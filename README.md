@@ -16,3 +16,32 @@ git clone https://github.com/angular/quickstart.git
 RxJs
 - Webpack 등의 Bundler
 
+## binding
+
+- {}: RENDERING
+```
+My name is {{name}}
+```
+
+- []: BINDING PROPERTIES
+```
+<video-control [volume]="currentVolume"></video-control>
+```
+
+- (): HANDLING EVENTS
+```
+<my-component (click)="onClick($event)"></my-component>
+```
+
+- [()]: TWO-WAY DATA BINDING
+```
+<input [(ngModel)]="myName">
+```
+
+- *: THE ASTERISK (*ngFor, *ngIf, *mgSwitch ...)
+```
+<my-component *ngFor="#item of items">
+</my-component>
+```
+
+
